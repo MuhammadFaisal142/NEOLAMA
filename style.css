@@ -143,3 +143,25 @@ border: 1px solid transparent;
   font-size: 16px;
   padding: 0 35px;
 }
+
+@media screen and (max-width: 760px) {
+  
+  
+  #img1{
+    text-align: center;
+    justify-content: center;
+  }
+  
+    #image-center{
+        text-align: center!important;
+    }
+}
+@media screen and (max-width: 770px) {
+  
+  
+    #text-center{
+        text-align: center!important;
+    }
+}
+
+  
