@@ -1,5 +1,10 @@
 body {
   overflow-x: hidden;
+
+  color: #1A2E35;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'David Libre', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -7,7 +12,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
+.img-thumbnail{
+  border: 0PX;
+}
 
 a {
   color: inherit;
@@ -82,23 +89,25 @@ footer {
   font-size: 14px;
 }
 
-.banner-heading{
+.banner-heading {
   letter-spacing: -1px;
   width: 450px;
 }
-.space-icon{
+
+.space-icon {
   margin-inline: 5px;
 }
-.loginBtn2{
- background: #FF725C;
- color: #FFFFFF;
-border: 1px solid transparent;
- border-radius: 100px;
+
+.loginBtn2 {
+  background: #FF725C;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 100px;
   width: 100px;
   height: 36px;
   text-align: center;
 
- 
+
 }
 
 /* scardd section css */
@@ -145,23 +154,22 @@ border: 1px solid transparent;
 }
 
 @media screen and (max-width: 760px) {
-  
-  
-  #img1{
+
+
+  #img1 {
     text-align: center;
     justify-content: center;
   }
-  
-    #image-center{
-        text-align: center!important;
-    }
-}
-@media screen and (max-width: 770px) {
-  
-  
-    #text-center{
-        text-align: center!important;
-    }
+
+  #image-center {
+    text-align: center !important;
+  }
 }
 
-  
+@media screen and (max-width: 770px) {
+
+
+  #text-center {
+    text-align: center !important;
+  }
+}
