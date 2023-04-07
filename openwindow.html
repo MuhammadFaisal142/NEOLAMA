@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Window</title>
+</head>
+<body>
+    <button onclick="openwindow()"> Open Window</button>
+    <button onclick="closewindow()"> Close Window</button>
+    <button onclick="movwindow() ">Move To </button>
+    <button onclick="resizeWindow()">Resize Window</button>
+    <script>
+        var myWindow;
+        function openwindow(){
+            // myWindow = window.open("https://www.w3schools.com/default.asp" , "faisal" ,"width=500px,height=200px,left=100px, top=200px");
+            myWindow = window.open("" , "faisal" ,"width=500px,height=200px");
+            myWindow.document.write("<p>Faisal kya hall hai </p>")
+        }
+        function closewindow(){
+            myWindow.close();
+        }
+        function movwindow(){
+            myWindow.moveTo(100,100);
+        }
+        function resizeWindow(){
+            myWindow.resizeTo(1000,900);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+</head>
+<body>
+    <form action="" onsubmit="sumitFunction()">
+        <label for="">Name</label> <input type="text" id="fname" onfocus="onFucous(this)" onblur="onblurfunction(this)"
+        
+        /*oninput="oninputFunction(this)" */ onchange="onChangeFunction(this)" oninvalid="alert('please fill the complete form')" required ><br><br>
+        <label for="">Class</label> <input type="text" id=""  onfocus="onFucous(this)"  onblur="onblurfunction(this)" oninput="oninputFunction(this)" onselect="selectFunction()"><br><br>
+        <label for="">Country</label>
+        <select name="" id="" onfocus="onFucous(this)" onblur="onblurfunction(this)" onchange="onChangeFunction(this)">      
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="SriLanka">SriLanka</option>
+            <option value="Nepal">Nepal</option>
+
+        </select>
+        <input type="submit">
+    </form>
+    <div id="test" style="border: 2px solid red;"></div>
+    <script>
+       function onFucous(element){
+        element.style.backgroundColor="lime";
+       }
+       function onblurfunction(element1){
+        element1.style.backgroundColor=""
+       }
+       function oninputFunction(element){
+        var x=element.value;
+        document.getElementById("test").innerHTML=x;
+       }
+       function onChangeFunction(element){
+        var x=element.value;
+        document.getElementById("test").innerHTML=x;
+       }
+       function selectFunction(){
+        console.log("you selected some text.");
+       }
+       function sumitFunction(){
+        alert("you submited the form")
+       }
+    </script>
+</body>
+</html>

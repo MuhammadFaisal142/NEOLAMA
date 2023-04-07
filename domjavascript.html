@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html id="main">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Madule </title>
+    <link rel="stylesheet" href="">
+    <style>
+        .outer {
+            height: 400px;
+            width: 800px;
+            background: lightblue;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #inner {
+            height: 200px;
+            width: 400px;
+            background: yellowgreen;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #inner div {
+            height: 30px;
+            width: 50px;
+            background: green;
+            display: inline-grid;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        #test-sub {
+            height: 200px;
+            width: 400px;
+            background: lightblue;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #adjecent {
+            height: 200px;
+            width: 500px;
+            background: lightblue;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        #text{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="child-C">C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </div>
+
+    <br>
+    <h1>Faisal Saith : Dom append methods</h1>
+    <div id="test-sub">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias adipisci fugit animi magnam consectetur iste
+            sit ut dolores, corrupti hic reprehenderit, repudiandae, ea provident. Delectus provident sequi magnam nisi
+            adipisci.</p>
+    </div>
+
+    <br>
+
+    <div id="adjecent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ex rem perferendis eaque, reprehenderit harum
+            odit, dolores quos optio deserunt natus, nemo quae alias eum commodi quia provident culpa eius!</p>
+    </div>
+    <br>
+    <div id="list1">
+        <ul>
+            <li>orange</li>
+            <li>red</li>
+            <li>blue</li>
+            <li>white</li>
+            <li>yellowgreen</li>
+        </ul>
+    </div>
+    <div id="list2">
+        <ul>
+            <li>Faisal</li>
+            <li>sundas</li>
+        </ul>
+    </div>
+    <br>
+    <div id="contains" class="container">
+        <!-- <h2>Contains Method in javascript</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium nostrum quae harum quo ut deserunt repellendus magni vero sed rem dolorem nulla nemo id sunt at, similique libero. Saepe, tempora!</p>
+            
+            <p id="abc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, tempore. Dolor aut ipsam, voluptates delectus saepe eos porro facilis? Ullam veritatis, laudantium quod explicabo repellendus nam porro consequuntur inventore velit!</p> -->
+    </div>
+    <br>
+
+    <!-- setTimeout & clearTimeout -->
+        <div id="text"></div>
+    <button onclick="stopAnimation()">stop animation</button>
+    <script src="DOM-main.js"></script>
+</body>
+
+</html>
